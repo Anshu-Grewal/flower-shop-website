@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flower Shop Website</title>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+  <div class="logo">Flower.</div>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#Contact">Contact</a>
+  </nav>
+
+  <!-- Hamburger button (only phone ) -->
+  <button class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Icons (show only desktop) -->
+  <div class="icons">
+    <i class="fas fa-heart" id="heartIcon"></i>
+    <i class="fas fa-shopping-cart" id="cartIcon"></i>
+    <i class="fas fa-user" id="userIcon"></i>
+  </div>
+</header>
+
+  <section class="banner">
+    <div class="slide active" style="background-image: url('images/banner1.jpg');"></div>
+    <div class="slide" style="background-image: url('images/banner2.jpg');"></div>
+    <div class="slide" style="background-image: url('images/banner3.jpg');"></div>
+
+    <div class="banner-content">
+      <h1>Fresh Flower's <br> Natural & Beautiful Flowers</h1>
+      <h3><p>Flowers are the reproductive structures of flowering plants, also known as angiosperms.</p></h3>
+      <button class="btn" onclick="location.href='#products'">Shop Now</button>
+    </div>
+  </section>
+
+  <h2 id="about" class="section-title">About Us</h2>
+
+  <section class="about-section" style="display: flex; align-items: center; justify-content: center; background-color: #fff0f5; padding: 60px 20px; gap: 50px; flex-wrap: wrap;">
+    <div class="about-video" style="flex: 1 1 400px;">
+      <video autoplay muted loop style="width: 100%; border-radius: 20px; box-shadow: 0 4px 20px rgba(255, 64, 129, 0.3);">
+        <source src="video/rose.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="about-text" style="flex: 1 1 400px; background: white; border-radius: 15px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+      <h2 style="color: #ff4081; font-size: 32px; font-weight: bold; margin-bottom: 10px;">Why Choose Us</h2>
+      <div style="width: 60px; height: 4px; background: #ff4081; margin-bottom: 20px; border-radius: 2px;"></div>
+      <p style="font-size: 16px; color: #444; line-height: 1.6; margin-bottom: 15px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra libero ac arcu bibendum, vitae laoreet purus pulvinar.
+      </p>
+      <p style="font-size: 16px; color: #444; line-height: 1.6; margin-bottom: 15px;">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+      </p>
+      <div id="more-about" style="display: none; margin-top: 10px;">
+        <p style="font-size: 16px; color: #444; line-height: 1.6;">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, animi inventore! Nostrum labore voluptatem esse deleniti earum placeat debitis tempora?
+        </p>
+      </div>
+      <button onclick="document.getElementById('more-about').style.display='block'; this.style.display='none';"
+        style="margin-top: 15px; padding: 10px 20px; background-color: #ff4081; color: white; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+        Learn More
+      </button>
+    </div>
+  </section>
+
+  <h2 id="products" class="section-title">Latest Products</h2>
+
+  <section class="product-section">
+    <div class="product"><img src="images/product1.jpg"><h3>Flower Pot</h3><p>$15.99</p></div></a>
+
+    <div class="product"><img src="images/product2.jpg"><h3>Flower Pot</h3><p>$16.56</p></div></a>
+
+    <div class="product"><img src="images/product3.jpg"><h3>Flower Pot</h3><p>$17.78</p></div></a>
+
+    <div class="product"><img src="images/product4.jpg"><h3>Flower Pot</h3><p>$12.56</p></div>
+
+    <div class="product"><img src="images/product5.jpg"><h3>Flower Pot</h3><p>$17.56</p></div>
+
+    <div class="product"><img src="images/product6.jpg"><h3>Flower Pot</h3><p>$16.58</p></div>
+
+    <div class="product"><img src="images/product7.jpg"><h3>Flower Pot</h3><p>$18.57</p></div>
+
+    <div class="product"><img src="images/product8.jpg"><h3>Flower Pot</h3><p>$19.76</p></div>
+
+    <div class="product"><img src="images/product9.jpg"><h3>Flower Pot</h3><p>$10.54</p></div>
+
+    <div class="product"><img src="images/product10.jpg"><h3>Flower Pot</h3><p>$14.96</p></div>
+
+    <div class="product"><img src="images/product11.jpg"><h3>Flower Pot</h3><p>$16.59</p></div>
+
+    <div class="product"><img src="images/product12.jpg"><h3>Flower Pot</h3><p>$13.92</p></div>
+  </section>
+
+  <h2 id="Contact" class="section-title">Contact Us</h2>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-image-box">
+        <img src="images/banner1.jpg" alt="Contact Us">
+        <div class="contact-info">
+          <p><span class="icon">&#9993;</span> anshu@gmail.com</p>
+          <p><span class="icon">&#9742;</span> +91654457889568</p>
+        </div>
+      </div>
+
+      <div class="contact-form-box">
+        <h2>Contact Info</h2>
+        <form>
+          <input type="text" placeholder="Enter your name" required />
+          <input type="email" placeholder="Enter your email" required />
+          <input type="tel" placeholder="Enter your number" required />
+          <textarea rows="4" placeholder="Your message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-column">
+    <h3>Quick Links</h3>
+    <p>Home</p>
+    <p>About</p>
+    <p>Products</p>
+    <p>Review</p>
+    <p>Contact</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Extra Links</h3>
+    <p>My Account</p>
+    <p>My Orders</p>
+    <p>My Favourite</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Location</h3>
+    <p>USA</p>
+    <p>India</p>
+    <p>France</p>
+    <p>Japan</p>
+  </div>
+
+  <div class="footer-column footer-contact">
+    <h3>Contact Info</h3>
+    <p>anshu@gmail.com</p>
+    <p>+917836478899</p>
+    <p>Gurugram,India</p>
+  </div>
+</footer>
+
+
+  <div class="footer-bottom">
+    Copyright&copy; 2025 Flower Shop | All rights reserved.
+  </div>
+
+  <!-- External JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
